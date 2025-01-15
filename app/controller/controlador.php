@@ -7,5 +7,6 @@ $modelo = new Modelo();
 
 $ranking = $modelo->obtenerRanking();
 
-error_log(print_r($ranking));
+
+
 

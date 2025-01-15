@@ -27,10 +27,9 @@ Class Modelo {
       $stmt->execute();
       $result = $stmt->get_result();
 
-      if (count($result)> 0) {
-
+      if ($result->num_rows > 0) {
         $ranking = $result->fetch_all(MYSQLI_ASSOC);
-
+      error_log(print_r($ranking));
         return $ranking;
 
       } else {
