@@ -1,0 +1,11 @@
+<?php 
+
+
+require_once '../model/modelo.php';
+
+$modelo = new Modelo();
+
+$ranking = $modelo->obtenerRanking();
+
+error_log(print_r($ranking));
+
