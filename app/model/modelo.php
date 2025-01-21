@@ -6,7 +6,7 @@ Class Modelo {
 
   public function __construct()
   {
-    require_once '../config/configDb.php';
+    require_once './config/configDb.php';
     try{
       $this->conexion = new mysqli(SERVIDOR,USUARIO,PASSWORD,BBDD);
        if ($this->conexion->connect_error) {

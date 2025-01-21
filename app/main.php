@@ -1,7 +1,7 @@
 <?php 
 
 
-require_once '../model/modelo.php';
+require_once './model/modelo.php';
 
 $modelo = new Modelo();
 $ranking = $modelo->obtenerRanking();
@@ -29,7 +29,7 @@ $html .= '</tbody></table>
 $html .= '<script>
             document.getElementById("miBoton").onclick = function() {
               // Redirigir a pdf.php con el array en la URL
-              window.location.href = "../pdf.php?ranking=' . $rankingJson . '";
+              window.location.href = "pdf.php?ranking=' . $rankingJson . '";
             };
           </script>';
 
